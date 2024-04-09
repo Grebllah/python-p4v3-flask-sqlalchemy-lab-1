@@ -42,11 +42,6 @@ def min_magnitude(magnitude):
             'quakes': earthquakes
             }
     return make_response(body, 200)
-# Task #4: Add view to get earthquakes matching a minimum magnitude value
-# Edit app.py to add a view that takes one parameter, a float that represents an magnitude. The route should have the form /earthquakes/magnitude/<float:magnitude>.
-# The view should query the database to get all earthquakes having a magnitude greater than or equal to the parameter value, and return a JSON response containing the count of matching rows along with a list containing the data for each row.
-# For example, the URL http://127.0.0.1:5555/earthquakes/magnitude/9.0
-# Links to an external site. should result in a response with a 200 status and a body containing JSON formatted text as shown:
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
